@@ -1,0 +1,18 @@
+{
+  "name": "hardhat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "copy-contracts": "mkdir -p ../frontend/src/contracts && cp ./artifacts/contracts/MyToken.sol/MyToken.json ../frontend/src/contracts/"
+  },
+  "keywords": [],
+  "author": "Akihiro Watanabe",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "hardhat": "^2.22.10"
+  }
+}
