@@ -35,7 +35,7 @@ To run this project locally, follow these steps:
 
     **Note:**
     - The `ACCOUNT_PRIVATE_KEY` is used for deploying contracts. Make sure this account has MATIC tokens from the [Polygon Faucet](https://faucet.polygon.technology/).
-    - The **INFURA_API_KEY** is required to connect to the Polygon network via Infura. You can obtain this by creating an account at [Infura](https://app.infura.io/).
+    - The `INFURA_API_KEY` is required to connect to the Polygon network via Infura. You can obtain this by creating an account at [Infura](https://app.infura.io/).
 
 ## Usage
 
