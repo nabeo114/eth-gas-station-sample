@@ -6,7 +6,6 @@
 
 For more details about the Polygon Gas Station, refer to the official documentation [here](https://docs.polygon.technology/tools/gas/polygon-gas-station/).
 
-
 ## Installation
 
 To run this project locally, follow these steps:
@@ -25,6 +24,19 @@ To run this project locally, follow these steps:
     npm install
     ```
 
+3. Configure the `.env` file:
+
+    Create a `.env` file in the `frontend` directory with the following variables:
+
+    ```.env
+    INFURA_API_KEY=your_infura_api_key_here
+    ACCOUNT_PRIVATE_KEY=your_private_key_here
+    ```
+
+    **Note:**
+    - The `ACCOUNT_PRIVATE_KEY` is used for deploying contracts. Make sure this account has MATIC tokens from the [Polygon Faucet](https://faucet.polygon.technology/).
+    - The **INFURA_API_KEY** is required to connect to the Polygon network via Infura. You can obtain this by creating an account at [Infura](https://app.infura.io/).
+
 ## Usage
 
 1. Start the development server:
@@ -40,5 +52,5 @@ To run this project locally, follow these steps:
 ## Features
 
 - **Fetch Gas Prices**: Retrieve live gas prices (fast, standard, safeLow) from the Polygon Amoy testnet Gas Station.
-- **Select Gas Price for Contract Deployment**: Users can select a gas price (fast, standard, or safeLow) to deploy an ERC20 contract and mint tokens.
-- **Real-time Updates**: Automatically fetch and update the gas prices at regular intervals.
+- **Select Gas Price for Contract Deployment**: Users can choose a gas price (fast, standard, or safeLow) to deploy an ERC20 contract and mint tokens.
+- **Real-time Updates**: Gas prices are updated automatically at regular intervals.
